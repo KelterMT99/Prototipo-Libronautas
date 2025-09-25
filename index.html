@@ -1,0 +1,435 @@
+<div id="particles-js" aria-hidden="true"></div>
+
+<header class="app-header" role="banner">
+  <div class="brand">
+    <img class="logo" src="https://i.ibb.co/mrWRzPz0/Logolibro.png" alt="Logo Libronautas">
+    <span class="brand-title">LIBRONAUTAS</span>
+  </div>
+
+  <button class="menu-toggle" aria-label="Abrir menú principal">☰</button>
+
+  <nav class="main-nav" role="navigation" aria-label="Navegación principal">
+    <button class="nav-btn" data-go="home" aria-current="page">🏠 Inicio</button>
+    <button class="nav-btn" data-go="about">ℹ️ Acerca de</button>
+    <button class="nav-btn" data-go="subscriptions">💳 Suscripciones</button>
+
+    <button class="nav-btn role-only" data-role="children" data-go="missions">🚀 Misiones</button>
+    <button class="nav-btn role-only" data-role="children" data-go="children">👦 Niños</button>
+    <button class="nav-btn role-only" data-role="children" data-go="library">📚 Biblioteca</button>
+    <button class="nav-btn role-only" data-role="parents" data-go="parents">👨‍👩‍👧 Padres</button>
+    <button class="nav-btn role-only" data-role="teachers" data-go="teachers">📘 Maestros</button>
+    <button class="nav-btn role-only" data-role="school" data-go="school">🏫 Colegio</button>
+
+    <button class="nav-btn" data-go="register">📝 Registro</button>
+    <button class="nav-btn login" data-go="login">🔑 Login</button>
+    <button class="nav-btn logout-btn" data-go="logout" hidden>⎋ Salir</button>
+  </nav>
+</header>
+
+<main class="app-main" role="main">
+  <section id="home" class="page active" data-page="home" aria-labelledby="homeTitle">
+    <div class="container">
+      <div class="hero">
+        <h1 id="homeTitle" class="title">✨ BIENVENIDOS A LIBRONAUTAS ✨</h1>
+        <p id="typed" class="subtitle">
+          Explora el universo de la lectura con misiones, juegos y progreso en tiempo real.
+        </p>
+        <div class="hero-actions">
+          <button class="btn cta pulse" data-go="login">🚀 Comenzar la aventura</button>
+          <button class="btn ghost" data-go="about">ℹ️ Conocer más</button>
+        </div>
+        <div class="badges-intro compact-panel" style="margin-top:14px">
+          <span class="badge">🏅 Insignias</span>
+          <span class="badge">📈 Progreso</span>
+          <span class="badge">🎯 Retos</span>
+        </div>
+      </div>
+
+      <div class="cards" style="margin:18px 12px">
+        <article class="card lift">
+          <h3>📝 1. Regístrate</h3>
+          <p>Crea tu perfil (niño, padre, docente o colegio).</p>
+          <button class="chip" data-go="register">Crear cuenta</button>
+        </article>
+        <article class="card lift">
+          <h3>🎮 2. Elige una misión</h3>
+          <p>Juega sílabas, sopa de letras o trivia y suma puntos.</p>
+          <button class="chip" data-go="missions">Ver misiones</button>
+        </article>
+        <article class="card lift">
+          <h3>🏆 3. Gana recompensas</h3>
+          <p>Desbloquea insignias, diplomas y lecturas recomendadas.</p>
+          <button class="chip" data-go="library">Ir a la biblioteca</button>
+        </article>
+      </div>
+
+      <div class="panel" style="text-align:center; margin-top:12px">
+        <p class="subhead" style="margin:0">📚 Acompañamos a familias y colegios a disfrutar la lectura.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="page" data-page="about" aria-labelledby="aboutTitle">
+    <div class="container">
+      <div class="panel">
+        <h2 id="aboutTitle" class="section-title">🌟 Acerca de Libronautas</h2>
+        <p>
+          El Club Libronautas es un programa de lectoescritura infantil dividido en niveles:
+          🚀 Punto de Despegue, 🌍 Misión Tierra, 🌌 Misión Galáctica.
+        </p>
+        <div class="grid-2">
+          <div>
+            <h3 class="subhead">🎯 Objetivo</h3>
+            <p>Facilitar acceso a lecturas, juegos y seguimiento de progreso por rol.</p>
+          </div>
+          <div>
+            <h3 class="subhead">📬 Contacto</h3>
+            <p>
+              <a href="mailto:
+
+hola@lalibreriadedylan.com">📧 hola@lalibreriadedylan.com</a><br>
+              <a href="tel:(829) 894 - 7676">📞 (829) 894 - 7676</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="missions" class="page role-only" data-page="missions" data-role="children" aria-labelledby="missionsTitle">
+    <div class="container">
+      <h2 id="missionsTitle" class="section-title">Misiones</h2>
+      <p class="subhead">Elige una misión para ganar puntos e insignias 🏅</p>
+      <div class="cards">
+        <article class="card lift">
+          <h3>🔤 Sílabas</h3>
+          <p>Encuentra la sílaba correcta antes de que se acabe el tiempo.</p>
+          <button class="chip" data-go="game-syllables">Jugar</button>
+        </article>
+        <article class="card lift">
+          <h3>🧩 Sopa de letras</h3>
+          <p>Busca palabras ocultas entre letras.</p>
+          <button class="chip" data-go="game-wordsearch">Jugar</button>
+        </article>
+        <article class="card lift">
+          <h3>❓ Trivia</h3>
+          <p>Responde preguntas y suma puntos.</p>
+          <button class="chip" data-go="game-trivia">Jugar</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="library" class="page" data-page="library" aria-labelledby="libraryTitle">
+    <div class="container">
+      <h2 id="libraryTitle" class="section-title">📚 Biblioteca Digital</h2>
+      <div class="panel" style="margin-top:10px">
+        <div class="grid-2">
+          <div class="tags" id="libraryFilters">
+            <button class="chip" data-filter="despegue">🚀 Despegue</button>
+            <button class="chip" data-filter="tierra">🌍 Tierra</button>
+            <button class="chip" data-filter="galactica">🌌 Galáctica</button>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;justify-content:flex-end">
+            <label for="librarySearch" class="sr-only">Buscar título o autor</label>
+            <input id="librarySearch" type="search" placeholder="Buscar título o autor…"
+              style="flex:1;max-width:320px;padding:10px;border-radius:10px;
+                     border:1px solid rgba(255,255,255,.2);
+                     background:rgba(255,255,255,.08);color:#fff" autocomplete="off" aria-label="Buscar en biblioteca">
+            <div class="badge soft" id="subStatus" aria-live="polite">Plan: Gratis</div>
+          </div>
+        </div>
+      </div>
+      <div id="libraryGrid" class="cards" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section id="subscriptions" class="page" data-page="subscriptions" aria-labelledby="subsTitle">
+    <div class="container">
+      <h2 id="subsTitle" class="section-title">Club Libronautas</h2>
+      <p class="subhead">La lectura como misión, juego y descubrimiento.</p>
+      <div class="cards">
+        <article class="card lift">
+          <h3>Club Individual</h3>
+          <ul class="list">
+            <li>Acceso a lecturas y juegos</li>
+            <li>Puntos, insignias y diplomas</li>
+            <li>Grupos guiados</li>
+          </ul>
+          <button class="cta" id="btnPlanIndividual" aria-label="Elegir plan Club Libronautas Individual">Elegir plan</button>
+        </article>
+        <article class="card lift">
+          <h3>Club Colegios</h3>
+          <ul class="list">
+            <li>Panel docente con rúbrica</li>
+            <li>Creación de clubes y reportes</li>
+          </ul>
+          <button class="cta" id="btnPlanColegios" aria-label="Elegir plan Club Libronautas para Colegios">Elegir plan</button>
+        </article>
+        <article class="card lift">
+          <h3>Club Salas de tarea</h3>
+          <ul class="list">
+            <li>Refuerzo lector</li>
+            <li>Actividades lúdicas e imprimibles</li>
+          </ul>
+          <button class="cta" id="btnPlanSalas" aria-label="Elegir plan Club Libronautas Salas de tarea">Elegir plan</button>
+        </article>
+      </div>
+      <p class="subhead" id="payMsg" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <section id="children" class="page role-only" data-page="children" data-role="children" aria-labelledby="childrenTitle">
+    <div class="container">
+      <h2 id="childrenTitle" class="section-title">🎮 Panel de Niños</h2>
+      <div class="panel">
+        <p>Hola 👋 este es tu espacio para jugar y leer.</p>
+        <div class="chartBox"><canvas id="childChart" role="img" aria-label="Gráfico de progreso de lectura semanal"></canvas></div>
+        <div class="grid-2">
+          <div>
+            <h3 class="subhead">Tus insignias</h3>
+            <div id="childBadges" class="badges" aria-live="polite"></div>
+          </div>
+          <div>
+            <h3 class="subhead">Tareas</h3>
+            <ul id="childTasks" class="tasks" aria-live="polite"></ul>
+          </div>
+        </div>
+        <div class="panel">
+          <h3 class="subhead">🎓 Diplomas</h3>
+          <button class="chip" id="btnDiploma">Descargar diploma</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="parents" class="page role-only" data-page="parents" data-role="parents" aria-labelledby="parentsTitle">
+    <div class="container">
+      <h2 id="parentsTitle" class="section-title">👨‍👩‍👧 Panel Padres</h2>
+      <div class="panel">
+        <p><strong>Hijo/a:</strong> <span id="pName">Nicolás</span> ·
+           <strong>Nivel:</strong> <span id="pLevel">Misión Tierra</span> ·
+           <strong>Última actividad:</strong> <span id="pLast">Sopa</span></p>
+        <div class="kpis">
+          <div class="kpi"><span id="pTotalMin">0</span> Min. semanales</div>
+          <div class="kpi"><span id="pActs">0</span> Actividades</div>
+          <div class="kpi"><span id="pProg">0%</span> Progreso</div>
+        </div>
+        <div class="chartBox"><canvas id="progressChart" role="img" aria-label="Minutos de lectura por día"></canvas></div>
+        <h3>Logros recientes</h3>
+        <ul id="parentAchievements" class="list" aria-live="polite"></ul>
+        <h3>Tareas del niño</h3>
+        <ul id="parentTasks" class="tasks" aria-live="polite"></ul>
+        <h3>Misiones completadas</h3>
+        <ul id="parentMissions" class="list" aria-live="polite"></ul>
+        <h3>📄 Recursos</h3>
+        <button class="chip" id="btnResources">Descargar recursos</button>
+      </div>
+    </div>
+  </section>
+  <section id="teachers" class="page role-only" data-page="teachers" data-role="teachers" aria-labelledby="teachersTitle">
+    <div class="container">
+      <h2 id="teachersTitle" class="section-title">📘 Panel Docentes</h2>
+      <div class="panel compact">
+        <div class="kpis">
+          <div class="kpi"><span id="tStudents">0</span> Estudiantes</div>
+          <div class="kpi"><span id="tAvg">0%</span> Promedio</div>
+          <div class="kpi"><span id="tCompleted">0</span> Actividades</div>
+        </div>
+        <div class="chartBox"><canvas id="teacherRadar" role="img" aria-label="Radar de rúbrica evaluativa 0 a 100"></canvas></div>
+        <div class="table-wrap" role="region" aria-label="Tabla de estudiantes">
+          <table class="table">
+            <thead><tr><th>Estudiante</th><th>Nivel</th><th>Progreso</th><th>Última</th></tr></thead>
+            <tbody id="teacherTable"></tbody>
+          </table>
+        </div>
+        <h3>📊 Rúbrica Evaluativa</h3>
+        <div class="table-wrap" role="region" aria-label="Rúbrica por estudiante">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Estudiante</th>
+                <th>Sílabas</th>
+                <th>Palabras</th>
+                <th>Lectura grupal</th>
+                <th>Escritura</th>
+                <th>Comprensión</th>
+                <th>Tareas</th>
+                <th>Lectura casa</th>
+                <th>Disposición</th>
+              </tr>
+            </thead>
+            <tbody id="rubricTable"></tbody>
+          </table>
+        </div>
+        <div class="actions">
+          <button class="chip" id="btnExportClass">Exportar clase (CSV)</button>
+          <button class="chip" id="btnRubricExport">Exportar rúbrica (CSV)</button>
+        </div>
+        <h3>👥 Gestión de grupos</h3>
+        <form id="groupForm" aria-label="Formulario de creación de grupos">
+          <label for="groupName" class="sr-only">Nombre del grupo</label>
+          <input type="text" id="groupName" placeholder="Nombre del grupo" autocomplete="off">
+          <button type="submit" class="chip">Añadir grupo</button>
+        </form>
+        <ul id="groupList" class="list" aria-live="polite"></ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="school" class="page role-only" data-page="school" data-role="school" aria-labelledby="schoolTitle">
+    <div class="container">
+      <h2 id="schoolTitle" class="section-title">🏫 Panel Colegio</h2>
+      <div class="panel compact">
+        <div class="kpis">
+          <div class="kpi"><span id="kidsActive">0</span> Activos</div>
+          <div class="kpi"><span id="avgProgress">0%</span> Promedio</div>
+          <div class="kpi"><span id="todayActs">0</span> Hoy</div>
+        </div>
+        <div class="grid-2">
+          <div class="chartBox"><canvas id="schoolChart" role="img" aria-label="Distribución por nivel"></canvas></div>
+          <div class="chartBox"><canvas id="schoolBars" role="img" aria-label="Actividades completadas hoy"></canvas></div>
+        </div>
+        <h3 class="subhead">Resumen</h3>
+        <ul id="schoolSummary" class="list" aria-live="polite"></ul>
+        <button class="chip" id="btnSchoolExport">Exportar reporte (CSV)</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="game-syllables" class="page role-only" data-page="game-syllables" data-role="children" aria-labelledby="syllTitle">
+    <div class="container">
+      <h2 id="syllTitle" class="section-title">Juego: Sílabas</h2>
+      <div class="panel" role="region" aria-label="Panel del juego Sílabas">
+        <p>
+          Nivel: <span id="syllLevel"></span> ·
+          Ronda: <span id="syllRound"></span> ·
+          Vidas: <span id="syllLives"></span> ·
+          Racha: <span id="syllStreak"></span> ·
+          Tiempo: <span id="syllTime"></span>s
+        </p>
+        <p>Selecciona la sílaba: <span id="syllTarget"></span></p>
+        <div id="syllOptions" class="options"></div>
+        <p>Puntos: <span id="syllScore"></span></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="game-wordsearch" class="page role-only" data-page="game-wordsearch" data-role="children" aria-labelledby="wsTitle">
+    <div class="container">
+      <h2 id="wsTitle" class="section-title">Juego: Sopa de Letras</h2>
+      <div class="panel" role="region" aria-label="Panel del juego Sopa de letras">
+        <p>Palabras encontradas: <span id="foundWords">0</span>/<span id="totalWords">0</span></p>
+        <div id="wordGrid" class="grid" role="grid" aria-label="Cuadrícula de letras"></div>
+        <div id="wsWords" class="tags" aria-live="polite"></div>
+        <div class="ws-controls">
+          <button id="wsReset" class="chip">Nueva sopa</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="game-trivia" class="page role-only" data-page="game-trivia" data-role="children" aria-labelledby="triviaTitle">
+    <div class="container">
+      <h2 id="triviaTitle" class="section-title">Juego: Trivia</h2>
+      <div class="panel" id="triviaCard" role="region" aria-label="Tarjeta de preguntas">
+        <p>Pregunta <span id="qIdx"></span> de <span id="qTotal"></span></p>
+        <p id="quizQ"></p>
+        <div id="quizOpts" class="options"></div>
+        <p>Tiempo: <span id="qTime"></span> · Puntos: <span id="triviaScore"></span></p>
+      </div>
+      <div class="panel" id="quizEnd" style="display:none" aria-live="polite">
+        <h3>¡Trivia completada!</h3>
+        <p>Puntaje final: <span id="finalScore"></span></p>
+        <button class="chip" data-go="game-trivia">Jugar de nuevo</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="loginModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="loginTitle">
+  <div class="modal-content animate-slide">
+    <button class="login-close" title="Cerrar">✖</button>
+    <h2 id="loginTitle">Iniciar sesión</h2>
+    <form id="loginForm">
+      <label for="username">Usuario</label>
+      <div class="input-icon">
+        <span aria-hidden="true">👤</span>
+        <input type="text" id="username" required placeholder="Usuario" autocomplete="username">
+      </div>
+      <label for="password">Contraseña</label>
+      <div class="input-icon">
+        <span aria-hidden="true">🔑</span>
+        <input type="password" id="password" required placeholder="******" minlength="6" autocomplete="current-password">
+      </div>
+      <label for="role">Rol</label>
+      <select id="role" required>
+        <option value="">Seleccione un rol</option>
+        <option value="children">Niño</option>
+        <option value="parents">Padre</option>
+        <option value="teachers">Docente</option>
+        <option value="school">Colegio</option>
+      </select>
+      <label class="remember-wrap">
+        <input type="checkbox" id="remember"> Recordar sesión
+      </label>
+      <button type="submit" class="cta full">Entrar</button>
+      <p id="loginMsg" style="color:#ff8ea8;margin-top:6px" aria-live="polite"></p>
+    </form>
+  </div>
+</div>
+
+<div id="registerModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="registerTitle">
+  <div class="modal-content animate-slide">
+    <button class="login-close" title="Cerrar">✖</button>
+    <h2 id="registerTitle">Registro</h2>
+    <form id="registerForm">
+      <label for="regName">Nombre completo</label>
+      <input type="text" id="regName" required placeholder="Ej: Juan Pérez" autocomplete="name">
+
+      <label for="regUser">Usuario</label>
+      <input type="text" id="regUser" required autocomplete="username">
+
+      <label for="regPass">Contraseña</label>
+      <input type="password" id="regPass" required minlength="6" autocomplete="new-password">
+
+      <label for="regRole">Rol</label>
+      <select id="regRole" required>
+        <option value="">Seleccione un rol</option>
+        <option value="children">Niño</option>
+        <option value="parents">Padre</option>
+        <option value="teachers">Docente</option>
+        <option value="school">Colegio</option>
+      </select>
+
+      <!-- Avatares con imágenes -->
+      <label class="avatar-label">Elige tu avatar:</label>
+      <div class="avatar-grid">
+        <label>
+          <input type="radio" name="avatar" value="astronauta1" required>
+          <img src="https://i.ibb.co/Y51hBKc/renderizado-en-3d-del-astronauta.jpg" alt="Astronauta 1">
+        </label>
+        <label>
+          <input type="radio" name="avatar" value="astronauta2">
+          <img src="https://i.ibb.co/Qj7hdNgq/ilustracion-3d-divertido-astronauta.jpg" alt="Astronauta 2">
+        </label>
+        <label>
+          <input type="radio" name="avatar" value="cohete">
+          <img src="https://i.ibb.co/B5bYKDkR/vista-del-cohete-espacial-grafico-3d.jpg" alt="Cohete">
+        </label>
+        <label>
+          <input type="radio" name="avatar" value="ninos">
+          <img src="https://i.ibb.co/tPhPc87L/ninos-de-dibujos-animados-en-3d-explorando-la-luna-en-el-espacio.jpg" alt="Niños en la Luna">
+        </label>
+      </div>
+
+      <button type="submit" class="cta full">Registrarme</button>
+      <p id="regMsg" aria-live="polite"></p>
+    </form>
+  </div>
+</div>
+
+<footer class="app-footer" style="background:#155688;color:#fff;padding:18px;text-align:center" role="contentinfo">
+  <p>© 2025 Libronautas · Todos los derechos reservados</p>
+</footer>
+
+<div id="toasts" aria-live="polite" aria-atomic="true"></div>
